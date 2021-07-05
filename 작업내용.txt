@@ -63,3 +63,11 @@ input, select, textarea
 radio, checkbox - 값을 선택하는 속성 <~checked>
 
 select에서 값을 선택하는 속성 - <~selected> (option 태그에 정의)
+
+
+
+id class name 의 차이점
+
+id, 단일선택
+class 복수선택 가능 
+name 단순 값 찾기
