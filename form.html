@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'
+  </head>
+  <body>
+    <form method='GET' action="http://yonggyo.com/~webclass">
+      문장:<input type="text" name="text" value="기본문장"><br> <!--문장-->
+      단일 선택:<input type="radio" name="radio" checked><br> <!--단일선택-->
+      다중 선택:<input type="checkbox" name="checkbox" checked><br> <!--다중선택-->
+      비밀번호:<input type="password" name="password" value="123456"><br> <!--비밀번호-->
+      이메일:<input type="email" name="email" value="taeil3432@gmail.com"><br> <!--이메일-->
+      숫자:<input type="number" name="number" value="10000"><br> <!--숫자-->
+      크기:<input type="range" min="10" max="30" name="range" value="15"><br> <!--범위-->
+      색상:<input type="color" name="color" value="#ff0000"><br> <!--색상-->
+      날짜:<input type="date" name="date" value="2021-07-05"><br> <!--날짜-->
+      <br>
+      <textarea name="textarea">여러줄 기본값</textarea> <!--문장 여러줄-->
+      <br>
+      다중선택(콤보박스)
+      <select name="select">
+        <option value="선택1">선택1</option>
+        <option value="선택2" selected>선택2</option>
+        <option value="선택3">선택3</option>
+      </select>
+      <br>
+      다중선택
+      <input type="text" list="flower" name="flower" value="장미">
+      <datalist id="flower">
+        <option value="장미"></option>
+        <option value="연꽃"></option>
+        <option value="개나리"></option>
+      </datalist>
+      <br>
+      <input type="submit" value="제출하기">
+    </form>
+  </body>
+  </html>
