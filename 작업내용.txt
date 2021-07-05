@@ -38,6 +38,28 @@ img 삽입 절대경로
 <footer>
 <adress>
 
+-------------------------------------------------------------------------------------------
+Form 폼형태 
+	Method - 양식의 데이터를 전송하는 방식
+		-GET 주소창에 데이터가 노출 
+		URL 방식의 형태로 전송되는 데이터
+		전송할 데이터의 용량 제한이 있다.
+					
+		-POST 주소창에 데이터 노출되지 않음
+		내부적으로 처리 (용량의 제한이 덜 함)
+		많은 데이터를 전송할 시에 사용
+		예) 파일을 전송 시 -enctype="multipart/form-data"
 
+	Action - 양식 데이터를 전송할 URL
 
+	Target - 전송할 창
 
+	Enctype 
+
+input, select, textarea
+데이터를 찾을 수 있는 속성 - name
+기본값을 지정하는 속성 - value 
+
+radio, checkbox - 값을 선택하는 속성 <~checked>
+
+select에서 값을 선택하는 속성 - <~selected> (option 태그에 정의)
