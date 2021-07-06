@@ -154,7 +154,105 @@ stylesheet
   ㄴ 글꼴
     font-family: 기본 글꼴, 대체 글꼴1, 대체 글꼴2;
                 (기본 글꼴이 없는 경우 대체 글꼴로 적용)
+    웹 폰트 (시스템에 없는 폰트)
+    <link> 스타일 css 추가 방식
+            ㄴ or @import css 링크 추가
 
   ㄴ 공간
-  ㄴ 그래픽
+     Display 
+     ㄴ block - 공간 (div)
+              - 너비,높이
+              - 상하좌우 여백(내부,외부)
+              - padding 내부여백
+              - margin 외부여백
+
+     ㄴ inline - 글의 속성 (span)
+               - 너비, 높이 x
+               - 모든 방향(상하좌우) 내부 여백 가능 (padding)
+               - 좌우 외부 여백 가능 (margin)
+
+     ㄴ inline-block - inline 과 block 을 절충
+                     - 줄 개행 x
+                     - 너비, 높이 변경 가능
+     
+     ㄴ none - 감춤 처리
+
+     ㄴ table - 테이블 행
+        table-cell - 테이블 열
+
+  ㄴ 레이아웃
+    내용 영역 기준 
+    ㄴ content-box - 내용 영역의 사이즈를 유지 하면서 확대
+                   - 총 사이즈 = 내용 용역 + 내부 여백 + 경계
+    
+    경계 영역 기준
+    ㄴ border-box - 경계를 기준으로 사이즈를 정하는 방식
+                  - 경계 + 내부여백에 따라서 내용 영역의 사이즈가 변경된다.
+
+  ㄴ 여백
+    ㄴ 1. 내부여백 (Padding)
+       ex) padding: 10px; -> 상, 오른쪽, 아래, 왼쪽 (모든방향) 10px 
+
+           padding: 10px 20px; -> 10px = 상,하
+                                  20px = 좌,우 
+
+           padding: 10px 20px 30px; -> 10px = 위 
+                                       20px = 좌,우
+                                       30px = 아래
+          
+           padding: 10px 20px 30px 40px; -> 10px = 위
+                                            20px = 오른쪽
+                                            30px = 아래쪽
+                                            40px = 왼쪽
+           
+           padding-top  
+           padding-bottom
+           padding-left
+           padding-right
+
+    ㄴ 2. 외부여백 (Margin)
+         Padding 과 적용 순서 동일
+           margin-top
+           margin-bottom
+           margin-left
+           margin-right
+
+  ㄴ 경계
+    border - 경계
+    border: 라인 굵기(px) 경계선 종류 색상;
+    경계선 종류 - solid (직선)
+                - dotted (점선)
+                - dashed --------
+    border-radius - 경계를 둥글게 (px,%)
+                  - ex) 50% = 원
+    
+  ㄴ 포지션
+    position - static - 기본
+
+               relative - 상대위치
+                        - 기준 -> 자신
+                        - 자기 자신이 위치한 위치기준으로 상대적으로 이동
+
+               absolute - 기준 -> 상대위치 지정한 부모 또는 조상
+                        - 부모, 조상 누구라도 상대 위치 속성을 가진다면 (relative, absolute, fixed)
+                        - 상대 속성을 가지고 있는 부모가 없다면 전체 문서 기준 
+
+               fixed - 기준 -> 물리적으로 보이는 화면 기준으로 상대적으로 이동
+                     - 상대위치는 상대적으로 이동하기 위한 것으로 추가속성이 존재함.
+                       ㄴ top - 위 -> 아래
+                          right - 오른쪽 -> 왼쪽 
+                          bottom - 아래 -> 위
+                          left - 왼쪽 -> 오른쪽
+                          z-index - 각 요소의 층위 (숫자가 클수록 층위가 앞에있고 작아질수록 뒤에있음.)
+                          ㄴ ex) z-index: 10;, z index: 9; (10이 9보다는 앞에 있다.)
+    ㄴ 배치
+      float - 떠있는 속성 , 속성이 없더라도 다음 요소에 영향을 미친다.
+      float-left - 왼쪽 -> 오른쪽
+      float-right - 오른쪽  -> 왼쪽
+
+      clear - left -> float: left 속성 제거
+            - right -> float: right 속성 제거 
+            - both -> float: left , float: right 모두 제거
+   
+
                   
