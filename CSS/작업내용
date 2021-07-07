@@ -281,5 +281,71 @@ stylesheet
       background: 색상 이미지 반복 위치;
                 (색상, 이미지는 둘 다 나와도 되고, 둘중에 하나만 있어도 된다.)
 
+    14. 기타 
+       overflow - hidden > 박스안의 넘치는 내용을 숨겨줌.
+                - scroll > 박스 안의 넘치는 내용을 스크롤 생성으로 보여줌
+                - auto > 자동으로 넘치는 내용을 처리해준다. 
+       
+       overflow-x > 가로 스크롤바를 지워준다 . 세로는 그대로 적용
+       overflow-y > 세로 스크롤바를 지워준다 . 가로는 그대로 적용
 
-                  
+    15. list-style
+        ㄴ ul 태그 li의 스타일 
+        
+        ex) list-style: 
+      
+
+    16. cursor 
+        ㄴ 마우스를 올렸을때 화살표 모양이 생긴다.
+
+        ex) cursor: pointer / hadnd .. 
+
+    17. border 경계선
+        ㄴ border-top > 상단 경계선
+           border-bottom > 하단 경계선
+           border-left > 왼쪽 경계선 
+           border-right > 오른쪽 경계선 
+
+-트랜지션
+
+  -전환효과
+  사이즈나, 색상, 위치등이 변화 될때 주는 효과
+  (애니메이션 효과)
+
+  transition > 전환 효과 
+  ㄴ ex ) .div:hover {} > 어떤 div 를 작은 상태에서 확대(크게)시켜준다
+  transition-property > CSS 속성 
+  transition-duration > 전환효과 진행 시간
+  transition-timing-function > 애니메이션 효과
+  ㄴ 기본값: ease-in, ease-out, ease-in-out
+     일정 속도 전환: linear 
+  transition-delay > 전환 효과가 적용되기 전 대기 시간
+  
+  축약시: transition: CSS효과 
+
+-미디어쿼리
+
+  장비 화면 사이즈에 따라서 적용되는 CSS를 구별 해주는 구간
+
+  @media all and (max-width: 구간px) {
+  // 구간에 따라서 적용될 CSS
+  }
+
+  뷰포트 viewport 
+
+  <meta name="viewport" content="user-scalable=yes, inital-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+
+  user-scalable=yes
+  ㄴ 사용자가 화면 확대 축소를 할 수 있는지 여부 (yes,no)
+
+  inital-scale=1.0
+  ㄴ 처음 로딩 사이즈(1- 장비사이즈와 동일, 1 이상 - 확대, 1 미만 - 축소)
+
+  maximum-scale=5.0
+  ㄴ 사용자가 최대한 확대할 수 있는 사이즈 비율 (1 이상- 확대가능)
+
+  minimum-scale=0.5
+  ㄴ 사용자가 최대한 축소 할 수 있는 사이즈 비율 (1 이하- 축소가능)
+
+  width=device-width
+  ㄴ 

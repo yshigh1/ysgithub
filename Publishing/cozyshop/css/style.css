@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+/** 공통 */
+* { 
+	box-sizing: border-box;
+	color: #000000;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+	font-size: 13px; /* 1rem - 13px */
+}
+
+body { 
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.layout_width {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/** 사이트 상단 메뉴 */
+.site_top { 
+	height: 30px;
+	background-color: #f9f9f9;
+	text-align: right;
+}
+
+.site_top a {
+	font-size: 12px; 
+	letter-spacing: -0.24px;
+	color: #333333;
+	padding: 0 10px;
+	line-height: 30px;
+}
