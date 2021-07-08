@@ -41,8 +41,23 @@ ul {
 	font-size: 12px; 
 	letter-spacing: -0.24px;
 	color: #333333;
-	padding: 0 10px;
+	padding: 0 10px 0 11px;
 	line-height: 30px;
+}
+
+.site_top a:before {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 9px;
+	background-color: #333333;
+	position: absolute;
+	top: 10px;
+	left: 0;
+}
+
+.site_top .first:before {
+	display: none;
 }
 
 /** 사이트 로고, 검색, 아이콘 메뉴 */
@@ -194,13 +209,13 @@ main article:hover .spread_bar {
 /** 메인 배너 영역 */
 
 .main_banner {
-	width: 100%;
 	margin-bottom: 103px;
 }
 
 .main_banner .swiper-slide {
 	height: 600px;
 }
+
 .main_banner .swiper-wrapper .swiper-slide:nth-child(3n+1) {
 	background:url("../img/banner1.jpeg") no-repeat center center;
 } 
@@ -212,7 +227,6 @@ main article:hover .spread_bar {
 .main_banner .swiper-wrapper .swiper-slide:nth-child(3n) {
 	background:url("../img/banner3.jpeg") no-repeat center center;
 }
-
 
 .main_banner .swiper-pagination-bullet {
 	display: inline-block;
@@ -306,7 +320,7 @@ main article:hover .spread_bar {
 .goods_list .goods .image {
 	display: block;
 	margin-bottom: 10px;
-	width: 270px;
+	width: 100%;
 }
 
 .goods_list .goods .goods_nm {
@@ -320,7 +334,6 @@ main article:hover .spread_bar {
 	line-height: 20px;
 	border-bottom: 1px solid #dbdbdb;
 	margin-bottom: 10px;
-	max-width: 270px;
 }
 
 .goods_list .goods .short_desc {
@@ -330,5 +343,36 @@ main article:hover .spread_bar {
 	font-weight: 400;
 	word-break: break-all;
 	margin-bottom: 8px;
-	max-width: 270px;
+}
+
+.goods_list .goods .consumer {
+	color: #acacac;
+	font-size: 14px;
+	letter-spacing: -1.5px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	padding-right: 15px;
+}
+
+.goods_list .goods .price {
+	font-size: 18px;
+	letter-spacing: -0.8px;
+	font-weight: 600;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.goods_list ul .goods {
+	float: left;
+	width: calc(100% / 4 - 30px);
+	margin-left: 40px;
+}
+
+.goods_list ul:after {
+	clear: left;
+	content: "";
+	display: block;
+}
+
+.goods_list ul .goods:nth-child(4n+1) {
+	margin-left: 0;
 }
