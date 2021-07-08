@@ -9,4 +9,17 @@ window.onload = function() {
 		  clickable : true,
         },
 	});
+	
+	 var swiper2 = new Swiper(".tv_movie .mySwiper", {
+        slidesPerView: 5,
+        spaceBetween: 0,
+		navigation: {
+			nextEl: ".tv_movie .next",
+			prevEl: ".tv_movie .prev",
+		},
+        pagination: {
+          el: ".tv_movie .swiper-pagination",
+          clickable: true,
+        },
+      });
 };
