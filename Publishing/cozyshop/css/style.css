@@ -150,8 +150,54 @@ nav li.more_menu {
 	width: 50px;
 	text-align: center;
 }
+/* 메인 영역 */
+
+main {
+	min-height: 2000px;
+}
+
+main .mtit {
+	color: #222222;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+	font-size: 25px;
+}
+
+main .mtit > span {
+	font-weight: 700;
+}
+
+main .stit {
+	color: #808285;
+	text-transform: uppercase;
+	font-weight: 300;
+	letter-spacing: -0.48px;
+	text-align: center;
+	font-size: 16px;
+}
+
+main article .spread_bar {
+	width: 40px;
+	height: 1px;
+	background-color: #030303;
+	margin: 20px auto 50px auto;
+	transition: width 1s;
+}
+
+main article:hover .spread_bar {
+	width: 120px;
+}
+
+
 
 /** 메인 배너 영역 */
+
+.main_banner {
+	width: 100%;
+	margin-bottom: 103px;
+}
+
 .main_banner .swiper-slide {
 	height: 600px;
 }
@@ -197,4 +243,92 @@ nav li.more_menu {
 
 .main_banner .navi.next {
 	right: 10px;
+}
+
+/* WELCOME TO COZYSHOP */
+
+.main_sbanner {
+	margin-bottom: 103px;
+}
+
+.main_sbanner .tit {
+	color: #313131;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 38px;
+}	
+
+.main_sbanner span {
+	font-weight: 700;
+}
+
+.main_sbanner .banner_grp .banner {
+	float:left;
+	width: calc(100% / 3 - 10px);
+	margin-left: 15px;
+}
+
+.main_sbanner .banner_grp .banner:first-child {
+	margin-left: 0;
+}
+
+.main_sbanner .banner_grp:after {
+	clear: left;
+	content: "";
+	display: block;
+}
+
+.main_sbanner .text1 {
+	letter-spacing: -1.08px;
+	color: #313131;
+	font-size: 18px;
+	text-align: center;
+	margin-top: 18px;
+}
+
+.main_sbanner .text2 {
+	font-weight: 300;
+	letter-spacing: -0.84px;
+	color: #313131;
+	font-size: 14px;
+	text-align: center;
+}
+
+.main_sbanner .banner img {
+	display: block;
+	width: 100%;
+}
+
+/* New Items S */
+
+.goods_list .goods .image {
+	display: block;
+	margin-bottom: 10px;
+	width: 270px;
+}
+
+.goods_list .goods .goods_nm {
+	color: #111111;
+	font-size: 16px;
+	font-weight: 500;
+	letter-spacing: -0.5px;
+	padding: 5px 0 10px;
+	overflow: hidden;
+	word-break: break-all;
+	line-height: 20px;
+	border-bottom: 1px solid #dbdbdb;
+	margin-bottom: 10px;
+	max-width: 270px;
+}
+
+.goods_list .goods .short_desc {
+	color: #777777;
+	font-size: 13px;
+	letter-spacing: -0.5px;
+	font-weight: 400;
+	word-break: break-all;
+	margin-bottom: 8px;
+	max-width: 270px;
 }
