@@ -43,22 +43,25 @@ ul {
 	color: #333333;
 	padding: 0 10px 0 11px;
 	line-height: 30px;
+	position: relative;
+	display: inline-block;
 }
 
 .site_top a:before {
-	content: "";
+	content: '';
 	display: block;
 	width: 1px;
 	height: 9px;
 	background-color: #333333;
 	position: absolute;
-	top: 10px;
+	top: 11px;
 	left: 0;
 }
 
 .site_top .first:before {
-	display: no;
+	display: none;
 }
+
 
 /** 사이트 로고, 검색, 아이콘 메뉴 */
 .logo_search .box {
@@ -165,8 +168,8 @@ nav li.more_menu {
 	width: 50px;
 	text-align: center;
 }
-/* 메인 영역 */
 
+/** 메인 영역 */
 main {
 	min-height: 2000px;
 }
@@ -205,9 +208,7 @@ main article:hover .spread_bar {
 }
 
 
-
 /** 메인 배너 영역 */
-
 .main_banner {
 	margin-bottom: 103px;
 }
@@ -215,17 +216,19 @@ main article:hover .spread_bar {
 .main_banner .swiper-slide {
 	height: 600px;
 }
+
 .main_banner .swiper-wrapper .swiper-slide:nth-child(3n+1) {
-	background:url("../img/banner1.jpeg") no-repeat center center;
+	background:url("../img/banner1.jpg") no-repeat center center;
 } 
 
 .main_banner .swiper-wrapper .swiper-slide:nth-child(3n+2) {
-	background:url("../img/banner2.jpeg") no-repeat center center;
+	background:url("../img/banner2.jpg") no-repeat center center;
 }
 
 .main_banner .swiper-wrapper .swiper-slide:nth-child(3n) {
-	background:url("../img/banner3.jpeg") no-repeat center center;
+	background:url("../img/banner3.jpg") no-repeat center center;
 }
+
 
 .main_banner .swiper-pagination-bullet {
 	display: inline-block;
@@ -242,7 +245,6 @@ main article:hover .spread_bar {
 	width: 50px;
 	border-radius: 6px;
 }
-
 .main_banner .navi {
 	position: absolute;
 	font-size: 30px;
@@ -259,8 +261,7 @@ main article:hover .spread_bar {
 	right: 10px;
 }
 
-/* WELCOME TO COZYSHOP */
-
+/** Welcome to Cozyshop */
 .main_sbanner {
 	margin-bottom: 103px;
 }
@@ -272,14 +273,14 @@ main article:hover .spread_bar {
 	font-weight: 300;
 	text-align: center;
 	margin-bottom: 38px;
-}	
+}
 
-.main_sbanner span {
+.main_sbanner .tit > span {
 	font-weight: 700;
 }
 
 .main_sbanner .banner_grp .banner {
-	float:left;
+	float: left;
 	width: calc(100% / 3 - 10px);
 	margin-left: 15px;
 }
@@ -290,23 +291,23 @@ main article:hover .spread_bar {
 
 .main_sbanner .banner_grp:after {
 	clear: left;
-	content: "";
+	content: '';
 	display: block;
 }
 
 .main_sbanner .text1 {
-	letter-spacing: -1.08px;
 	color: #313131;
 	font-size: 18px;
+	letter-spacing: -1.08px;
 	text-align: center;
-	margin-top: 18px;
+	margin-top: 15px;
 }
 
 .main_sbanner .text2 {
 	font-weight: 300;
-	letter-spacing: -0.84px;
 	color: #313131;
 	font-size: 14px;
+	letter-spacing: -0.84px;
 	text-align: center;
 }
 
@@ -315,8 +316,8 @@ main article:hover .spread_bar {
 	width: 100%;
 }
 
-/* New Items S */
 
+/** 상품 진열 영역 */
 .goods_list {
 	margin-bottom: 103px;
 }
@@ -352,15 +353,15 @@ main article:hover .spread_bar {
 	color: #acacac;
 	font-size: 14px;
 	letter-spacing: -1.5px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Verdana;
 	padding-right: 15px;
 }
 
 .goods_list .goods .price {
 	font-size: 18px;
-	letter-spacing: -0.8px;
+	letter-spacing: -0.8px; 
 	font-weight: 600;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Verdana;
 }
 
 .goods_list ul .goods {
@@ -372,7 +373,7 @@ main article:hover .spread_bar {
 
 .goods_list ul:after {
 	clear: left;
-	content: "";
+	content: '';
 	display: block;
 }
 
@@ -380,10 +381,9 @@ main article:hover .spread_bar {
 	margin-left: 0;
 }
 
-
-/* 상품 소개 배너 */
+/** 상품 소개 배너 */
 .main_intro_banner {
-	background:url(../img/intro_banner.jpeg) no-repeat right center;
+	background:url("../img/intro_banner.jpg") no-repeat right center;
 	margin-bottom: 103px;
 }
 
@@ -403,7 +403,7 @@ main article:hover .spread_bar {
 
 .main_intro_banner > .inner:after {
 	clear: left;
-	content: "";
+	content: '';
 	display: block;
 }
 
@@ -428,8 +428,8 @@ main article:hover .spread_bar {
 	border: 1px solid #333333;
 	color: #333333;
 	font-size: 14px;
-	line-height: 35px;
 	text-align: center;
+	line-height: 35px;
 }
 
 .main_intro_banner .view_more:hover {
@@ -437,8 +437,7 @@ main article:hover .spread_bar {
 	color: #ffffff;
 }
 
-/* TV & MOVIE S */
-
+/** TV & MOVIE */
 .tv_movie .swiper-container {
 	height: 525px;
 }
@@ -455,11 +454,12 @@ main article:hover .spread_bar {
 }
 
 .tv_movie .navi {
-	position: absolute;
+	position: absolute; 
 	font-size: 31px;
 	top: 247px;
 	z-index: 10;
 	color: #d5d5d5;
+	cursor: pointer;
 }
 
 .tv_movie .navi.prev {
@@ -470,9 +470,9 @@ main article:hover .spread_bar {
 	right: calc(50% - 600px);
 }
 
-/** Footer 영역 */
 
-footer {
+/** footer 영역 */
+footer { 
 	margin-top: 103px;
 	background-color: #f9fafa;
 	min-height: 300px;
@@ -481,19 +481,20 @@ footer {
 footer .customer_service_info {
 	background-color: #ffffff;
 	border-top: 1px solid #d5d5d5;
-	border-bottom:  1px solid #d5d5d5;
+	border-bottom: 1px solid #d5d5d5;
 	padding: 20px 0;
 }
 
-footer .customer_service_info > .info {
+footer .customer_service_info > .info { 
 	display: table;
 }
 
 footer .customer_service_info .box {
 	display: table-cell;
+	vertical-align: middle;
 }
 
-footer .customer_service_info .box1 {
+footer .customer_service_info .box1 { 
 	width: 195px;
 }
 
@@ -501,17 +502,18 @@ footer .customer_service_info .box4 {
 	width: 250px;
 }
 
+
 footer .customer_service_info .text1 {
 	font-size: 16px;
 	font-weight: bold;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Verdana;
 	letter-spacing: -2px;
 }
 
 footer .customer_service_info .text2 {
 	font-size: 30px;
 	font-weight: bold;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-family: Verdana;
 	letter-spacing: -3px;
 }
 
@@ -541,12 +543,12 @@ footer .customer_service_info .box3 .btn:first-child {
 }
 
 footer .customer_service_info .text3 {
-	font-size: 16px;
+	font-size: 16px; 
 	font-weight: 500;
 	letter-spacing: -1px;
 }
 
-footer.customer_service_info .text4 {
+footer .customer_service_info .text4 {
 	font-weight: 500;
 	font-size: 14px;
 	letter-spacing: -1px;
@@ -560,15 +562,14 @@ footer .customer_service_info .box4 {
 	padding: 0 10px 0 25px;
 }
 
-/* 하단 사이트 안내 */
-
+/** 하단 사이트 안내 & 공지사항 */
 footer .site_guide {
 	padding: 20px 0 17px;
 }
 
 footer .site_guide .site_map {
 	float: left;
-	width: calc(100% - 330px);
+	width: calc(100% - 339px);
 }
 
 footer .site_guide .notice_box {
@@ -581,7 +582,7 @@ footer .site_guide .notice_box {
 
 footer .site_guide:after {
 	clear: both;
-	content: "";
+	content: '';
 	display: block;
 }
 
@@ -602,6 +603,7 @@ footer .notice_box .more {
 	top: 5px;
 	font-size: 11px;
 	font-weight: normal;
+	display: block;
 	width: 46px;
 	height: 20px;
 	border: 1px solid #58595b;
@@ -633,7 +635,6 @@ footer .notice_box ul a:hover {
 }
 
 /** 하단 사이트 맵 */
-
 .site_guide .site_map {
 	margin-left: 9px;
 }
@@ -649,7 +650,7 @@ footer .notice_box ul a:hover {
 
 .site_guide .site_map:after {
 	clear: left;
-	content: "";
+	content: '';
 	display: block;
 }
 
@@ -669,18 +670,17 @@ footer .notice_box ul a:hover {
 	margin: 0;
 	margin-bottom: 5px;
 	padding: 0;
-	display: block; /* 틀림 */ 
+	display: table; 
 }
 
 .site_guide .site_map dt,
 .site_guide .site_map dd {
-	display:  table-cell;
+	display: table-cell;
 	font-size: 12px;
 	color: #333333;
 }
 
 /** 하단 회사 정보 */
-
 footer .company_info {
 	border-top: 1px solid #d1d3d4;
 	padding: 22px 9px;
@@ -698,8 +698,7 @@ footer .company_info .copyright {
 	text-align: right;
 }
 
-/** 카카오 상담하기 버튼 */ 
-
+/** 카카오 상담하기 버튼 */
 footer .kakao_btn {
 	width: 60px;
 	position: fixed;
